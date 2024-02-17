@@ -1,7 +1,5 @@
 import {Link, useLoaaderData, Form} from "react-router-dom"
 
-{/*NOTE: Form action will need to be updated after router.js is complete*/}
-
 const Index = () => {
     const bookmarks = useLoaderData();
     
@@ -21,7 +19,7 @@ const Index = () => {
             })}
 
     <h2>Add a new bookmark</h2>
-            <Form action='' method='post'>
+            <Form action='/create' method='post'>
                 <input type='input' name='name' placeholder='website'/>
                 <input type='input' name='url' placeholder='http://'/>
                 <input type='input' name='description' placeholder='what does this website help with?'/>
