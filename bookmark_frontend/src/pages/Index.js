@@ -1,4 +1,4 @@
-import {Link, useLoaaderData, Form} from "react-router-dom"
+import {useLoaderData, Link, Form} from "react-router-dom"
 
 const Index = () => {
     const bookmarks = useLoaderData();
