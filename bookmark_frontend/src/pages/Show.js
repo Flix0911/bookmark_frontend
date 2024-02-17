@@ -1,7 +1,5 @@
 import { useLoaaderData, Form } from "react-router-dom"
 
-{/* NOTE: Form action will need to be updated when router is complete*/}
-
 const Show = () => {
     const bookmark = useLoaaderData();
     
@@ -11,7 +9,7 @@ const Show = () => {
             <h2>{bookmark.url}</h2>
             <p>{bookmark.description}</p>
 
-            <Form action='' method='post'>
+            <Form action={`/update/${bookmark._id}`} method='post'>
             <fieldset>
                 <legend>Update {bookmark.name}</legend>
             <input type='input' name='name' placeholder='website'/>
@@ -22,7 +20,7 @@ const Show = () => {
             </Form>
 
             <h2>Delete Bookmark</h2>
-            <Form action='' method='post'>
+            <Form action={`/delete/${person._id}`} method='post'>
                 <input type='submit' value={`Delete ${bookmark.name}`}/>
             </Form>
 
