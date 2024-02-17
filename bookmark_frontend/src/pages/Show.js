@@ -15,7 +15,6 @@ const Show = () => {
                 <legend>Update {bookmark.name}</legend>
             <input type='input' name='name' placeholder='website'/>
                 <input type='input' name='url' placeholder='http://'/>
-                <input type='input' name='description' placeholder='what does this website help with?'/>
                 <input type='submit' value={`update ${bookmark.name}`}/>
             </fieldset> 
             </Form>

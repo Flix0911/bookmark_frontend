@@ -10,7 +10,6 @@ const Index = () => {
                 <Form action='/create' method='post'>
                     <input type='input' name='name' placeholder='website'/>
                     <input type='input' name='url' placeholder='http://'/>
-                    <input type='input' name='description' placeholder='what does this website help with?'/>
                     <input type='submit' value={'create bookmark'}/> 
                 </Form>
             </div>
