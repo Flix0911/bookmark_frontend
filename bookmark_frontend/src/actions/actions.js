@@ -48,3 +48,13 @@ export const updateAction = async ({ request, params }) => {
     return redirect('/')
 }
 
+//delete a bookmark
+export const deleteAction = async ({ params }) => {
+    await fetch(`${URL}/bookmark/${params.id}`, {
+
+        //what method to delete - delete
+        method: 'delete'
+    })
+    //redirect the action
+    return redirect('/')
+}
