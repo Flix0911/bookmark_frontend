@@ -3,7 +3,7 @@ import App from './App'
 import Index from './pages/Index'
 import Show from './pages/Show'
 import {} from './loaders'
-import { updateAction, createAction, deleteAction } from './actions'
+import { updateAction, createAction, deleteAction } from './actions/actions'
 
 const router = createBrowserRouter(
 
