@@ -1,22 +1,84 @@
+/* Font imports  */
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+
+/* Header  */
+.header {
+  border: 1px solid black;
+  background: rgb(5, 3, 5);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 3, 5, 1) 0%,
+    rgba(18, 10, 61, 1) 16%,
+    rgba(65, 40, 84, 1) 35%,
+    rgba(76, 195, 91, 1) 66%,
+    rgba(104, 218, 35, 1) 91%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.header h1 {
+  font-family: "Smokum", serif;
+  font-size: 40px;
+  color: white;
+  text-shadow: 5px 7px 3px black;
+}
+
+.header img {
+    height: 40px;
+}
+
+/* Index  */
+.bookmarks-list {
+  border: 1px solid black;
+}
+
+.create-form {
+  border: 1px solid black;
+}
+
+/* Show  */
+.bookmark {
+  border: 1px solid black;
+}
+
+.update-form {
+  border: 1px solid black;
+}
+
+.delete-button {
+  border: 1px solid black;
+}
+
 /* Footer */
 .footer {
-    border: 1px solid black;
-    text-align: center;
+  border: 1px solid black;
+  text-align: center;
 }
 
 .showcase {
-    border: 1px solid black;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+  border: 1px solid black;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .showcase img {
-    height: 50px;
-    border-radius: 50%;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .copyright {
+  border: 1px solid black;
+  font-size: 0.7rem;
+}
+
+.troll {
     border: 1px solid black;
-    font-size: .7rem;
+    opacity: .1;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
