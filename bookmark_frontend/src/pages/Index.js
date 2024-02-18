@@ -5,19 +5,26 @@ const Index = () => {
 
   return (
     <div>
-      
-      <div className="Bookmarks-list">
+      <div className="bookmarks-list">
         <h2>Bookmark List:</h2>
         {/* made a correction to the variable inside the map by adding "()" around bookmark  */}
         {bookmarks.map((bookmark) => {
           return (
-            <div key={bookmark._id} className="bookmark">
+            <div key={bookmark._id} className="bookmark-li">
               <Link to={`/${bookmark._id}`}>
                 <h3>{bookmark.title}</h3>
               </Link>
             </div>
           );
         })}
+      </div>
+
+      <div className="info">
+        <h2>Welcome to our Bookmark App!</h2>
+        <p>
+          Add a bookmark to your favorite webpage by typing in a title and the
+          url in the form below! We hope you enjoy our application!
+        </p>
       </div>
 
       <div className="create-form">
@@ -30,7 +37,6 @@ const Index = () => {
           <input type="submit" value={"Create Bookmark"} />
         </Form>
       </div>
-
     </div>
   );
 };

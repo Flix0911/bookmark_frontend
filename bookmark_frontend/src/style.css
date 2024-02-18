@@ -1,9 +1,8 @@
 /* Font imports  */
-@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Smokum&display=swap");
 
 /* Header  */
 .header {
-  border: 1px solid black;
   background: rgb(5, 3, 5);
   background: linear-gradient(
     90deg,
@@ -27,16 +26,65 @@
 }
 
 .header img {
-    height: 40px;
+  height: 40px;
 }
 
 /* Index  */
 .bookmarks-list {
   border: 1px solid black;
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  height: 500px;
+}
+
+.bookmark-li {
+  border: 1px solid black;
+  width: 98%;
+  text-align: center;
+  margin: 2px;
 }
 
 .create-form {
   border: 1px solid black;
+  margin: 0;
+  padding: 12px;
+  width: 40%;
+  position: fixed;
+  right: 20px;
+  top: 430px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.create-form Form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-form input {
+  display: flex;
+  height: 30px;
+}
+
+.info {
+  border: 1px solid black;
+  width: 41%;
+  position: fixed;
+  right: 20px;
+  top: 155px;
+  margin: 0;
+  padding: 10px;
+}
+
+.info h2 {
+  text-align: center;
 }
 
 /* Show  */
@@ -56,6 +104,9 @@
 .footer {
   border: 1px solid black;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .showcase {
@@ -76,9 +127,9 @@
 }
 
 .troll {
-    border: 1px solid black;
-    opacity: .1;
-    position: absolute;
-    left: 0;
-    top: 0;
+  border: 1px solid black;
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
