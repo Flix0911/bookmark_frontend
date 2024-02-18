@@ -6,17 +6,21 @@ const Index = () => {
   return (
     <div>
       <div className="bookmarks-list">
-        <h2>Bookmark List:</h2>
-        {/* made a correction to the variable inside the map by adding "()" around bookmark  */}
-        {bookmarks.map((bookmark) => {
-          return (
-            <div key={bookmark._id} className="bookmark-li">
-              <Link to={`/${bookmark._id}`}>
-                <h3>{bookmark.title}</h3>
-              </Link>
-            </div>
-          );
-        })}
+        <div className="list-head">
+          <h2>Bookmark List:</h2>
+        </div>
+        <div className="list">
+          {/* made a correction to the variable inside the map by adding "()" around bookmark  */}
+          {bookmarks.map((bookmark) => {
+            return (
+              <div key={bookmark._id} className="bookmark-li">
+                <Link to={`/${bookmark._id}`}>
+                  <h3>{bookmark.title}</h3>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <div className="info">
