@@ -1,0 +1,22 @@
+/* Footer */
+.footer {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.showcase {
+    border: 1px solid black;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.showcase img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.copyright {
+    border: 1px solid black;
+    font-size: .7rem;
+}
