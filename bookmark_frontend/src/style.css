@@ -1,6 +1,10 @@
 /* Font imports  */
-@import url("https://fonts.googleapis.com/css2?family=Smokum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Goudy+Bookletter+1911&display=swap");
 
+/* body  */
+body {
+    background-color: rgb(167, 173, 167);
+}
 /* Header  */
 .header {
   background: rgb(5, 3, 5);
@@ -19,7 +23,8 @@
 }
 
 .header h1 {
-  font-family: "Smokum", serif;
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
   font-size: 40px;
   color: white;
   text-shadow: 5px 7px 3px black;
@@ -31,6 +36,8 @@
 
 /* Index  */
 .bookmarks-list {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
   border-radius: 20px;
   margin-top: 70px;
   margin-left: 100px;
@@ -74,7 +81,13 @@
   margin: 2px;
 }
 
+h3 {
+  color: black;
+}
+
 .create-form {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
   border-radius: 20px;
   margin: 0;
   padding: 12px;
@@ -119,11 +132,12 @@ button {
   background-color: rgba(76, 195, 91, 1);
   border: 1px solid rgba(76, 195, 91, 1);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
   font-size: 16px;
   font-weight: 400;
   outline: none;
@@ -140,17 +154,19 @@ button {
 }
 
 button:hover {
-  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
   transform: translateY(-2px);
 }
 
 @media (min-width: 768px) {
-    button {
+  button {
     padding: 10px 30px;
   }
 }
 
 .info {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
   border-radius: 20px;
   width: 25%;
   position: fixed;
@@ -180,16 +196,72 @@ button:hover {
 }
 
 /* Show  */
+.return {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 10%;
+  padding: 3px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.return h2 {
+    color: white;
+}
+
 .bookmark {
-  border: 1px solid black;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  box-shadow: 15px 10px 10px black;
+  border-radius: 20px;
+  width: 20%;
+  position: fixed;
+  top: 300px;
+  left: 355px;
+  padding: 12px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.bookmark h2 {
+    color: rgba(76, 195, 91, 1);
 }
 
 .update-form {
-  border: 1px solid black;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  box-shadow: 15px 10px 10px black;
+  border-radius: 20px;
+  width: 25%;
+  text-align: center;
+  position: fixed;
+  right: 355px;
+  top: 300px;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+.update-form Form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.update-form input {
+  height: 25px;
+  font-size: 20px;
 }
 
 .delete-button {
-  border: 1px solid black;
+  position: fixed;
+  bottom: 200px;
+  left: 700px;
+  padding: 10px;
+}
+
+.delete-but {
+  margin-left: 150px;
 }
 
 /* Footer */
@@ -234,42 +306,60 @@ button:hover {
 }
 
 /* smaller screen size  */
-@media only screen and (max-width: 700px){
-    .bookmarks-list {
-        margin-left: 25px;
-    } 
-    .list-head {
-        left: 25px;
-        width: 48%;
-    }
-    .info {
-        margin-top: -50px;
-        right: 40px;
-        width: 30%;
-    }
-    .info-head {
-        margin-top: -50px;
-        left: 431px;
-        width: 32.9%;
-    }
-    .content {
-        margin-top: 80px;
-    }
-    .create-form {
-        margin-top: -45px;
-        right: 40px;
-        width: 30%;
-    }
-    .create-head {
-        margin-top: -45px;
-        left: 428px;
-        width: 33.4%;
-    }
-    .create-form Form {
-        margin-top: 105px;
-    }
-    button {
+@media only screen and (max-width: 700px) {
+  .bookmarks-list {
+    margin-left: 25px;
+  }
+  .list-head {
+    left: 25px;
+    width: 48%;
+  }
+  .info {
+    margin-top: -50px;
+    right: 40px;
+    width: 30%;
+  }
+  .info-head {
+    margin-top: -50px;
+    left: 430px;
+    width: 32.9%;
+  }
+  .content {
+    margin-top: 80px;
+  }
+  .create-form {
+    margin-top: -45px;
+    right: 40px;
+    width: 30%;
+  }
+  .create-head {
+    margin-top: -45px;
+    left: 425px;
+    width: 33.7%;
+  }
+  .create-form Form {
+    margin-top: 105px;
+  }
+  button {
     margin-left: 25px;
     width: 80%;
-    }
+  }
+  .return{
+    width: 30%;
+  }
+  .update-form{
+    right: 25px;
+    width: 40%;
+  }
+  .bookmark {
+    top: 330px;
+    left: 25px;
+    width: 40%;
+  }
+  .delete-but {
+    position: fixed;
+    left: 100px;
+    width: 25%;
+    bottom: 190px;
+  }
 }

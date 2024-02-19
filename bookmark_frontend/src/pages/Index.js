@@ -4,7 +4,7 @@ const Index = () => {
   const bookmarks = useLoaderData();
 
   return (
-    <div>
+    <div className="container">
       <div className="bookmarks-list">
         <div className="list-head">
           <h2>Bookmark List:</h2>
@@ -14,7 +14,7 @@ const Index = () => {
           {bookmarks.map((bookmark) => {
             return (
               <div key={bookmark._id} className="bookmark-li">
-                <Link to={`/${bookmark._id}`}>
+                <Link style={{textDecoration: "none"}} to={`/${bookmark._id}`}>
                   <h3>{bookmark.title}</h3>
                 </Link>
               </div>
